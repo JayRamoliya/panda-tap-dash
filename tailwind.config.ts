@@ -102,9 +102,9 @@ export default {
 					'75%': { transform: 'rotate(3deg)' }
 				},
 				'panda-appear': {
-					'0%': { transform: 'scale(0) rotate(180deg)', opacity: '0' },
-					'50%': { transform: 'scale(1.1) rotate(90deg)', opacity: '0.8' },
-					'100%': { transform: 'scale(1) rotate(0deg)', opacity: '1' }
+					'0%': { transform: 'scale(0)', opacity: '0' },
+					'50%': { transform: 'scale(1.1)', opacity: '0.8' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
 				},
 				'panda-tap': {
 					'0%': { transform: 'scale(1)' },
