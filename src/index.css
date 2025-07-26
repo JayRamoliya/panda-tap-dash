@@ -8,33 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cute Panda Game Colors */
+    --background: 340 15% 98%;
+    --foreground: 340 8% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 340 10% 99%;
+    --card-foreground: 340 8% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 340 10% 99%;
+    --popover-foreground: 340 8% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 340 82% 67%;
+    --primary-foreground: 340 10% 99%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 200 60% 88%;
+    --secondary-foreground: 200 20% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 340 8% 95%;
+    --muted-foreground: 340 5% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 85% 85%;
+    --accent-foreground: 45 20% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 340 10% 99%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 340 8% 90%;
+    --input: 340 8% 90%;
+    --ring: 340 82% 67%;
+
+    /* Game-specific colors */
+    --game-bg: 210 100% 97%;
+    --game-success: 120 60% 70%;
+    --game-warning: 45 85% 75%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(340 82% 67%), hsl(340 75% 75%));
+    --gradient-secondary: linear-gradient(135deg, hsl(200 60% 88%), hsl(200 65% 92%));
+    --gradient-game: linear-gradient(180deg, hsl(210 100% 97%), hsl(200 40% 95%));
+    
+    /* Shadows */
+    --shadow-cute: 0 8px 25px -8px hsl(340 82% 67% / 0.25);
+    --shadow-game: 0 4px 15px -4px hsl(340 40% 60% / 0.15);
+    --shadow-panda: 0 6px 20px -6px hsl(340 50% 50% / 0.3);
 
     --radius: 0.5rem;
 
@@ -56,33 +72,49 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode cute colors */
+    --background: 260 15% 8%;
+    --foreground: 340 15% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 260 10% 10%;
+    --card-foreground: 340 15% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 260 10% 10%;
+    --popover-foreground: 340 15% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 340 75% 60%;
+    --primary-foreground: 260 10% 10%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 200 30% 20%;
+    --secondary-foreground: 200 60% 85%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 260 8% 15%;
+    --muted-foreground: 340 8% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 70% 55%;
+    --accent-foreground: 260 10% 10%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 260 10% 10%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 260 8% 20%;
+    --input: 260 8% 20%;
+    --ring: 340 75% 60%;
+
+    /* Dark game colors */
+    --game-bg: 260 20% 12%;
+    --game-success: 120 50% 60%;
+    --game-warning: 45 70% 65%;
+    
+    /* Dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(340 75% 60%), hsl(340 70% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(200 30% 20%), hsl(200 35% 25%));
+    --gradient-game: linear-gradient(180deg, hsl(260 20% 12%), hsl(260 15% 15%));
+    
+    /* Dark shadows */
+    --shadow-cute: 0 8px 25px -8px hsl(340 75% 50% / 0.4);
+    --shadow-game: 0 4px 15px -4px hsl(340 30% 30% / 0.3);
+    --shadow-panda: 0 6px 20px -6px hsl(340 40% 40% / 0.5);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
