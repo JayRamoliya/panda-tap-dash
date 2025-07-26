@@ -19,7 +19,7 @@ const PandaGame = ({ onBackToHome }: PandaGameProps) => {
   const [gameOver, setGameOver] = useState(false);
   const [showPanda, setShowPanda] = useState(false);
   const [pandaPosition, setPandaPosition] = useState<PandaPosition>({ x: 50, y: 50, id: 0 });
-  const [timeLimit, setTimeLimit] = useState(2000); // Start with 2 seconds, will decrease
+  const [timeLimit, setTimeLimit] = useState(5000); // Start with 2 seconds, will decrease
   const [gameStarted, setGameStarted] = useState(false);
   const [pandaTapped, setPandaTapped] = useState(false);
   const [scoreAnimation, setScoreAnimation] = useState(false);
